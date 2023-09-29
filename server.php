@@ -23,8 +23,16 @@ function jumlahkan($x, $y) {
     return $x + $y;
 }
 
+// Fungsi untuk melakukan penjumlahan
+function kurangkan($x, $y) {
+    return $x - $y;
+}
+
 // Daftarkan operasi 'jumlahkan' dalam server
 $server->register('jumlahkan', array('x' => 'xsd:int', 'y' => 'xsd:int'), array('return' => 'xsd:int'), $namespace);
+
+// Daftarkan operasi 'jumlahkan' dalam server
+$server->register('kurangkan', array('x' => 'xsd:int', 'y' => 'xsd:int'), array('return' => 'xsd:int'), $namespace);
 
 // Menerima request dan memberikan respons
 $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';
