@@ -1,4 +1,13 @@
 <?php
+
+/*
+ Created by: Ridho Suhaebi Arrowi
+ Nim: 19211090
+ IDE: Visual Studio Code
+ Information: ridhosuhaebi01@gmail.com
+ PHP Version: 7.4
+*/
+
 // Atur laporan kesalahan dan tampilkan pesan kesalahan
 error_reporting(E_ALL);
 
@@ -23,7 +32,7 @@ function jumlahkan($x, $y) {
     return $x + $y;
 }
 
-// Fungsi untuk melakukan penjumlahan
+// Fungsi untuk melakukan pengurangan
 function kurangkan($x, $y) {
     return $x - $y;
 }
@@ -31,7 +40,7 @@ function kurangkan($x, $y) {
 // Daftarkan operasi 'jumlahkan' dalam server
 $server->register('jumlahkan', array('x' => 'xsd:int', 'y' => 'xsd:int'), array('return' => 'xsd:int'), $namespace);
 
-// Daftarkan operasi 'jumlahkan' dalam server
+// Daftarkan operasi 'kurangkan' dalam server
 $server->register('kurangkan', array('x' => 'xsd:int', 'y' => 'xsd:int'), array('return' => 'xsd:int'), $namespace);
 
 // Menerima request dan memberikan respons

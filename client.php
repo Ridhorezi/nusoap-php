@@ -1,4 +1,13 @@
 <?php
+
+/*
+ Created by: Ridho Suhaebi Arrowi
+ Nim: 19211090
+ IDE: Visual Studio Code
+ Information: ridhosuhaebi01@gmail.com
+ PHP Version: 7.4
+*/
+
 // Atur laporan kesalahan dan tampilkan pesan kesalahan
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
